@@ -27,11 +27,11 @@ $(document).ready(function() {
 		async : false,
 
 		success : function(data) {
-			$('#blockchaininfo.blocks').append(data.blocks);
+			$('#blockchaininfo_blocks').append(data.blocks);
 		},
 
 		error : function(xhr, status, err) {
-			$('#blockchaininfo.blocks').append(err+" N/A");
+			$('#blockchaininfo_blocks').append(err+" N/A");
 		}
 	});
 });
@@ -46,11 +46,11 @@ $(document).ready(function() {
 		async : false,
 
 		success : function(data) {
-			$('#info.connections').append(data.connections);
+			$('#info_connections').append(data.connections);
 		},
 
 		error : function(xhr, status, err) {
-			$('#info.connections').append(err+" N/A");
+			$('#info_connections').append(err+" N/A");
 		}
 	});
 });
