@@ -29,17 +29,21 @@ $(document).ready(function() {
 		async : false,
 
 		success : function(data) {
-			$('#info_connections').append(data.connections);
+			$('#info_connections').append(data.connections),
+			$('#info_version').append(data.version),
+			$('#info_protocolversion').append(data.protocolversion);
 		},
 
 		error : function(xhr, status, err) {
-			$('#info_connections').append(err+" N/A");
+			$('#info_connections').append(err+" N/A"),
+			$('#info_version').append(err+" N/A"),
+			$('#info_protocolversion').append(err+" N/A");
 		}
 	});
 });
 
-/*
-$(document).ready(function() {
+
+/*$(document).ready(function() {
 	$.ajax({
 		url : "http://bitcoin.mubiz.com/peerinfo",
 		dataType : "json",
@@ -49,11 +53,11 @@ $(document).ready(function() {
 		async : false,
 
 		success : function(data) {
-			$('#info.connections').append(data.connections);
+			$('#info_connections').append(data.connections);
 		},
 
 		error : function(xhr, status, err) {
-			$('#info.connections').append(err+" N/A");
+			$('#info_connections').append(err+" N/A");
 		}
 	});
 });*/
