@@ -54,3 +54,23 @@ $(document).ready(function() {
 		}
 	});
 });
+
+/*
+$(document).ready(function() {
+	$.ajax({
+		url : "http://bitcoin.mubiz.com/peerinfo",
+		dataType : "json",
+		contentType : "application/json; charset=utf-8",
+		type : "GET",
+		timeout:	"5000",
+		async : false,
+
+		success : function(data) {
+			$('#info.connections').append(data.connections);
+		},
+
+		error : function(xhr, status, err) {
+			$('#info.connections').append(err+" N/A");
+		}
+	});
+});*/
