@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 	$.ajax({
-		url : "http://bitcoin.mubiz.com/blockchaininfo",
+		url : "https://bitcoin.mubiz.com/blockchaininfo",
 		dataType : "json",
 		contentType : "application/json; charset=utf-8",
 		type : "GET",
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	$.ajax({
-		url : "http://bitcoin.mubiz.com/info",
+		url : "https://bitcoin.mubiz.com/info",
 		dataType : "json",
 		contentType : "application/json; charset=utf-8",
 		type : "GET",
